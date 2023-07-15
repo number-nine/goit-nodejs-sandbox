@@ -17,10 +17,13 @@ const app = express();
 
 const formatsLogger = app.get("env") === "development" ? "dev" : "short";
 
+const contactsRouter = require("./routes/api/contacts");
 
 app.use(logger(formatsLogger));
 app.use(cors());
 app.use(express.json());
+
+app.use("/api/contacts", contactsRouter);
 
 app.use((req, res) => {
 //   throw HttpError(404, "Not found");
