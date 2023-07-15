@@ -1,14 +1,3 @@
-// const mongoose = require("mongoose");
-
-// const DB_HOST =
-//   "mongodb+srv://sa:McZ6I35wwAmZ88Hq@cluster0.vfgbduy.mongodb.net/contacts_db?retryWrites=true&w=majority";
-
-// mongoose
-//   .connect(DB_HOST)
-//   .then(() => console.log("DB connection success"))
-//   .catch(error => console.log(error.message));
-
-
 const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
